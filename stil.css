@@ -1,0 +1,82 @@
+.main__Fon {
+   background: #004980;
+   display: flex;
+   justify-content: center;
+}
+
+.main__Container {
+    width: 480px;
+    height: 459px;
+    background: #C2F5FF;
+    border-radius: 12px;
+    margin-top: 158px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__Title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #004980;
+    width: 208px;
+   
+}
+
+.main__Complexity {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.level {
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+/* .level :hover {
+    background: #c9bbbb;
+} */
+
+
+.main__Complexity_blok {
+    width: 97px;
+    height: 98px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.main__Comlexity_blok-box {
+    font-family: 'StratosSkyeng';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #0080C1;
+}
+
+.main__Button {
+    margin-top: 67px;
+    width: 246px;
+    height: 50px;
+    background: #7AC100;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+
+}
