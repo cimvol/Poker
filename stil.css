@@ -1,10 +1,10 @@
-.main__Fon {
+.body__fon {
    background: #004980;
    display: flex;
    justify-content: center;
 }
 
-.main__Container {
+.container {
     width: 480px;
     height: 459px;
     background: #C2F5FF;
@@ -16,7 +16,7 @@
     align-items: center;
 }
 
-.main__Title {
+.title {
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -27,7 +27,7 @@
    
 }
 
-.main__Complexity {
+.complexity {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -44,7 +44,7 @@
 } */
 
 
-.main__Complexity_blok {
+.complexity__blok {
     width: 97px;
     height: 98px;
     background: #FFFFFF;
@@ -52,7 +52,7 @@
     justify-content: center;
 }
 
-.main__Comlexity_blok-box {
+.comlexity__blok_box {
     font-family: 'StratosSkyeng';
     font-style: normal;
     font-weight: 400;
@@ -64,7 +64,7 @@
     color: #0080C1;
 }
 
-.main__Button {
+.button {
     margin-top: 67px;
     width: 246px;
     height: 50px;
