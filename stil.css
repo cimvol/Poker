@@ -3,17 +3,11 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("./assets/fonts/stratosskyengweb-regular.woff2") format("woff2");
-  }
+    src:local("StratosSkyeng"), 
+    url("fonts/stratosskyengweb-black.woff2") format("woff2"),
+    url("fonts/stratosskyengweb-black.woff") format("woff");
+}
   
-  @font-face {
-    font-family: "StratosSkyeng";
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url("./assets/fonts/stratosskyengweb-medium.woff2") format("woff2");
-  }
-
 .body__fon {
    background: #004980;
    display: flex;
