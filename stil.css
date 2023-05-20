@@ -1,11 +1,11 @@
 @font-face {
     font-family: "StratosSkyeng";
-    font-style: normal;
+    font-style: normal; 
     font-weight: 400;
-    font-display: swap;
+    font-display: swap; 
     src:local("StratosSkyeng"), 
-    url("fonts/stratosskyengweb-black.woff2") format("woff2"),
-    url("fonts/stratosskyengweb-black.woff") format("woff");
+    url("/fonts/stratosskyengweb-black.woff2") format("woff2"),
+    url("/fonts/stratosskyengweb-bolditalic.woff") format("woff");
 }
   
 .body__fon {
@@ -29,7 +29,7 @@
 .container__title {
     font-family: "StratosSkyeng";
     font-style: normal;
-    font-weight: 400;
+    /* font-weight: 400; */
     font-size: 40px;
     line-height: 48px;
     text-align: center;
