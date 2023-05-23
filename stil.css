@@ -4,8 +4,8 @@
     font-weight: 400;
     font-display: swap; 
     src:local("StratosSkyeng"), 
-    url("/fonts/stratosskyengweb-black.woff2") format("woff2"),
-    url("/fonts/stratosskyengweb-bolditalic.woff") format("woff");
+    url("./fonts/stratosskyengweb-regular.woff2") format("woff2"),
+    url("./fonts/stratosskyengweb-regular.woff") format("woff");
 }
   
 .body__fon {
@@ -66,8 +66,8 @@
 .level {
     font-family: 'StratosSkyeng';
     font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
+    font-weight: 300;
+    font-size: 40px;
     line-height: 72px;
     display: flex;
     align-items: center;
