@@ -31,17 +31,17 @@ levelHardElement.addEventListener('click', () => {
    // провожу проверку для определения какой уровень выбран
 if (localStorage.getItem('nam1')) {
     localStorage.removeItem('nam3');
-    let first = namberEasyElement.innerHTML;
+    //let first = namberEasyElement.innerHTML;
     namberEasyElement.innerHTML = localStorage.getItem('nam1');  
 }
 if (localStorage.getItem('nam2')) {
     localStorage.removeItem('nam1');
-    let second = namberMeanElement.innerHTML;
+    //let second = namberMeanElement.innerHTML;
     namberMeanElement.innerHTML = localStorage.getItem('nam2');
 }
 if (localStorage.getItem('nam3')) {
     localStorage.removeItem('nam1');
     localStorage.removeItem('nam2');
-    let third = namberHardElement.innerHTML;
+    //let third = namberHardElement.innerHTML;
     namberHardElement.innerHTML = localStorage.getItem('nam3'); 
 }
