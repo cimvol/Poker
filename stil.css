@@ -4,8 +4,8 @@
     font-weight: 400;
     font-display: swap; 
     src:local("StratosSkyeng"), 
-    url("/fonts/stratosskyengweb-black.woff2") format("woff2"),
-    url("/fonts/stratosskyengweb-bolditalic.woff") format("woff");
+    url("./fonts/stratosskyengweb-regular.woff2") format("woff2"),
+    url("./fonts/stratosskyengweb-regular.woff") format("woff");
 }
   
 .body__fon {
@@ -66,8 +66,8 @@
 .level {
     font-family: 'StratosSkyeng';
     font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
+    font-weight: 300;
+    font-size: 40px;
     line-height: 72px;
     display: flex;
     align-items: center;
@@ -95,4 +95,61 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
+}
+.button__text_link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.body__fon1 {
+    background: #004980;
+    
+ }
+
+.top_blok {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+
+}
+
+.top_watch {
+    margin-top: 41px;
+    margin-left: 22px;
+}
+
+.top_button_blok{
+    margin-top: 52px;
+    margin-left: 23px;
+}
+
+.top_button_body {
+    border: none;
+    background: #7AC100;
+    border-radius: 12px;
+    width: 246px;
+    height: 48px;
+    font-family: 'StratosSkyeng';
+    font-size: 24px;
+    line-height: 32px;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.playing_fild {
+    margin-left: 32px;
+     display: grid;
+     grid-row-gap: 15px;
+     grid-column-gap: 15px;
+    grid-template-columns: repeat(9, 1fr);
+
+}
+
+.playing_backside {
+   width: 95px;
+    height: 133px;
+    left: 906px;
+    top: 148px;
+    background: #FFFFFF;
+    border-radius: 4px;
 }
