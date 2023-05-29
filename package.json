@@ -6,13 +6,23 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier -write .",
-    "lint:js":"eslint ./src/**/*.js"
+    "lint:js": "eslint ./src/**/*.js",
+    "build": "NODE_ENV=prodaction webpack",
+    "start": "webpack-dev-server --open"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.0",
     "eslint": "^8.41.0",
-    "prettier": "^2.8.8"
+    "html-webpack-plugin": "^5.5.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "prettier": "^2.8.8",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
   },
   "dependencies": {
     "eslint-config-prettier": "^8.8.0",
