@@ -1,6 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 
 const isProduction = process.env.NODE_ENV === "production";
@@ -16,7 +18,7 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /\.css$/,  use: ["style-loader", "css-loader"] },
+            { test: /\.css$/,  use: [MiniCssExtractPlugin.loader, "css-loader"] },
         {
             test: /\.(png|svg|jpg|jpeg|gif)$/i,
             type: "asset/resourse",
@@ -34,5 +36,10 @@ module.exports = {
     new HtmlWebpackPlugin({
     template: "./index.html",
    }),
+   new MiniCssExtractPlugin(),
 ],
+optimization: {
+    minimizer: ["...", new CssMinimizerPlugin()],
+},
+// devtool: isProduction ? "hidden-sourse-map" : "sourse-map",
 };
