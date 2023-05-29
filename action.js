@@ -1,10 +1,21 @@
 
+const topButtonBody = document.querySelector(".top_button_body");
+
 const levelEasyElement = document.getElementById("levelEasy");
 const namberEasyElement = document.getElementById("namberEasy");
 const levelMeanElement = document.getElementById("levelMean");
 const namberMeanElement = document.getElementById("namberMean");
 const levelHardElement = document.getElementById("levelHard");
 const namberHardElement = document.getElementById("namberHard");
+
+const playBoard = document.getElementById("play-board");
+const startButton = document.getElementById("start");
+const formChoise = document.getElementById('form');
+
+
+const cardsElement = document.querySelectorAll("card");
+const playBoardGame = document.getElementById("play-board-game");
+
 
 
 levelEasyElement.addEventListener('click', () => {
@@ -31,17 +42,21 @@ levelHardElement.addEventListener('click', () => {
    // провожу проверку для определения какой уровень выбран
 if (localStorage.getItem('nam1')) {
     localStorage.removeItem('nam3');
-    //let first = namberEasyElement.innerHTML;
+    //const first = namberEasyElement.innerHTML;
     namberEasyElement.innerHTML = localStorage.getItem('nam1');  
 }
 if (localStorage.getItem('nam2')) {
     localStorage.removeItem('nam1');
-    //let second = namberMeanElement.innerHTML;
+    //const second = namberMeanElement.innerHTML;
     namberMeanElement.innerHTML = localStorage.getItem('nam2');
 }
 if (localStorage.getItem('nam3')) {
     localStorage.removeItem('nam1');
     localStorage.removeItem('nam2');
-    //let third = namberHardElement.innerHTML;
+    //const third = namberHardElement.innerHTML;
     namberHardElement.innerHTML = localStorage.getItem('nam3'); 
 }
+
+
+
+

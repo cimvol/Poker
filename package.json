@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier -write .",
     "lint:js": "eslint ./src/**/*.js",
-    "build": "NODE_ENV=prodaction webpack",
+    "build": "NODE_ENV=production webpack",
     "start": "webpack-dev-server --open"
   },
   "author": "",
