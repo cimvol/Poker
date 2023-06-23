@@ -67,12 +67,12 @@
     font-family: 'StratosSkyeng';
     font-style: normal;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 72px;
     display: flex;
     align-items: center;
     text-align: center;
-    color: #0080C1;
+    color: #004980;
 }
 
 
@@ -137,6 +137,7 @@
 }
 
 .playing_fild {
+    list-style-type: none;
     margin-left: 32px;
      display: grid;
      grid-row-gap: 15px;
