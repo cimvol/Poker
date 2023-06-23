@@ -1,21 +1,12 @@
 @font-face {
     font-family: "StratosSkyeng";
-    font-style: normal;
+    font-style: normal; 
     font-weight: 400;
-    font-display: swap;
-    src: url("./assets/fonts/stratosskyengweb-regular.woff2") format("woff2");
-  }
-  
-  @font-face {
-    font-family: "StratosSkyeng";
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url("./assets/fonts/stratosskyengweb-medium.woff2") format("woff2");
-  }
-
-
-
+    font-display: swap; 
+    src:local("StratosSkyeng"), 
+    url("./fonts/stratosskyengweb-regular.woff2") format("woff2"),
+    url("./fonts/stratosskyengweb-regular.woff") format("woff");
+}
   
 .body__fon {
    background: #004980;
@@ -38,7 +29,7 @@
 .container__title {
     font-family: "StratosSkyeng";
     font-style: normal;
-    font-weight: 400;
+    /* font-weight: 400; */
     font-size: 40px;
     line-height: 48px;
     text-align: center;
@@ -63,7 +54,6 @@
     border: none;
 }
 
-
 .complexity_button__blok {
     width: 97px;
     height: 98px;
@@ -73,17 +63,16 @@
     border: none;
 }
 
-
 .level {
     font-family: 'StratosSkyeng';
     font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
+    font-weight: 300;
+    font-size: 30px;
     line-height: 72px;
     display: flex;
     align-items: center;
     text-align: center;
-    color: #0080C1;
+    color: #004980;
 }
 
 
@@ -97,6 +86,7 @@
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
+    border: none;
 }
 
 .button__text {
@@ -105,4 +95,62 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
+}
+.button__text_link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.body__fon1 {
+    background: #004980;
+    
+ }
+
+.top_blok {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+
+}
+
+.top_watch {
+    margin-top: 41px;
+    margin-left: 22px;
+}
+
+.top_button_blok{
+    margin-top: 52px;
+    margin-left: 23px;
+}
+
+.top_button_body {
+    border: none;
+    background: #7AC100;
+    border-radius: 12px;
+    width: 246px;
+    height: 48px;
+    font-family: 'StratosSkyeng';
+    font-size: 24px;
+    line-height: 32px;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.playing_fild {
+    list-style-type: none;
+    margin-left: 32px;
+     display: grid;
+     grid-row-gap: 15px;
+     grid-column-gap: 15px;
+    grid-template-columns: repeat(9, 1fr);
+
+}
+
+.card_backside {
+   width: 95px;
+    height: 133px;
+    left: 906px;
+    top: 148px;
+    background: #FFFFFF;
+    border-radius: 4px;
 }
